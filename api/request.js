@@ -21,9 +21,9 @@ const request = (url = '', method = 'GET', data = {}, header = {   //这里这�
 						content: res.data.msg,
 						success: function(result) {
 							if (result.confirm) {
-								// uni.reLaunch({
-								// 	url: '/pages/login/index'    //这里需用绝对路径才可
-								// });
+								uni.reLaunch({
+									url: '/pages/my/index'    //这里需用绝对路径才可
+								});
 							}
 						}
 					});
