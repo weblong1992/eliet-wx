@@ -1,0 +1,114 @@
+{
+	// 如果您是通过uni_modules形式引入uView，可以忽略此配置
+	// "easycom": {
+	// 	"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	// },
+	"pages": [ 
+		{
+			"path" : "pages/login/login",
+			"style" : 
+			{
+				"navigationBarTitleText" : "授权登录"
+			}
+		},
+		{
+			"path" : "pages/login/addOtherPhone",
+			"style" : 
+			{
+				"navigationBarTitleText" : "添加其他手机号"
+			}
+		},
+	
+		{
+		  "path": "pages/my/index",
+		  "style": {
+		    "navigationBarTitleText": "我的"
+		  }
+		},
+		 {
+		      "path": "pages/index/index",
+		      "style": {
+		        "navigationBarTitleText": "首页"
+		      }
+		    },
+		    {
+		      "path": "pages/course/index",
+		      "style": {
+		        "navigationBarTitleText": "课程"
+		      }
+		    },
+		   
+		    {
+		    	"path" : "pages/my/basic-information/index",
+		    	"style" : 
+		    	{
+		    		"navigationBarTitleText" : "基本信息"
+		    	}
+		    },
+		    {
+		    	"path" : "pages/index/register",
+		    	"style" : 
+		    	{
+		    		"navigationBarTitleText" : "学员注册"
+		    	}
+		    },
+		    {
+		    	"path" : "pages/index/have-registered",
+		    	"style" : 
+		    	{
+		    		"navigationBarTitleText" : ""
+		    	}
+		    },
+		    {
+		    	"path" : "pages/index/trial-class",
+		    	"style" : 
+		    	{
+		    		"navigationBarTitleText" : ""
+		    	}
+		    },
+			// 体验课预约
+		    {
+		    	"path" : "pages/index/trial-class-reservation",
+		    	"style" : 
+		    	{
+		    		"navigationBarTitleText" : ""
+		    	}
+		    }
+		   
+		
+	],
+	// 底部导航栏配置
+	"tabBar": {
+	    "color": "#555555", // 文字颜色
+	    "selectedColor": "#54bcbd", // 选中文字颜色
+	    "borderStyle": "white", // 上边框颜色 white 白色
+	    "backgroundColor": "#FFFFFF", // 背景颜色
+	    "list": [
+	      {
+	        "pagePath": "pages/index/index", // 页面路径
+	        "text": "主页", // 按钮文字
+	        "iconPath": "/static/common/index.png", // 默认图片
+	        "selectedIconPath": "/static/common/index-active.png" // 选中图片
+	      },
+		  
+		  {
+		    "pagePath": "pages/course/index", // 页面路径
+		    "text": "课程",// 按钮文字
+		    "iconPath": "/static/common/course.png", // 默认图片
+		    "selectedIconPath": "/static/common/course-active.png" // 选中图片
+		  },
+	      {
+	        "pagePath": "pages/my/index", // 页面路径
+	        "text": "我的", // 按钮文字
+	        "iconPath": "/static/common/my.png", // 默认图片
+	        "selectedIconPath": "/static/common/my-active.png"// 选中图片
+			}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
